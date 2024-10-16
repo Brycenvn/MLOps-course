@@ -39,3 +39,26 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 
 
 
+## Poetry
+
+[Setup Conda with Poetry](https://freedium.cfd/https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fblog.stackademic.com%2Fconda-and-poetry-a-harmonious-fusion-8116895b6380
+)
+
+```bash
+conda install poetry
+# conda install -c conda-forge poetry
+```
+
+Init
+
+Khởi tạo poetry tại thư mục hiện tại
+```bash
+poetry init
+```
+![poetry](figs/poetry_init.PNG)
+
+
+Tạo thư mục dự án mới với poetry
+```bash
+poetry new test-poetry
+```
