@@ -139,3 +139,15 @@ poetry install
 https://quantrimang.com/cong-nghe/huong-dan-sua-loi-notrecognized-as-an-internal-or-external-command-125877
 
 Makefile creates short and readable commands for configuration tasks. You can use Makefile to automate tasks such as setting up the environment.
+
+## Makefile
+
+https://quantrimang.com/cong-nghe/huong-dan-sua-loi-notrecognized-as-an-internal-or-external-command-125877
+
+Makefile creates short and readable commands for configuration tasks. You can use Makefile to automate tasks such as setting up the environment.
+
+```bash
+sudo apt install make
+make hello
+```
+
