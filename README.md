@@ -2,6 +2,16 @@
 MLOps Specialize: Udemy Bootcamp 2022 
 
 
+
+
+
+## Conda Env
+
+Khởi tạo môi trường conda và lưu ở đường dẫn xác định
+- [Conda-Specifying a location for an environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#specifying-a-location-for-an-environment)
+- [Easily move a conda environment to a different drive on Windows without touching with conda](https://gist.github.com/mattirish/4c04c0a64654760c0c3ff040b07ff181)
+
+
 ```bash
 conda create --prefix D:/Users/st_cong/conda/mlops python=3.9
 ```
@@ -29,7 +39,7 @@ conda activate mlops
 ```
 
 
-Cookiecutter
+## Cookiecutter
 ```bash
 pip install cookiecutter
 cookiecutter https://github.com/khuyentran1401/data-science-template
@@ -41,8 +51,7 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 
 ## Poetry
 
-[Setup Conda with Poetry](https://freedium.cfd/https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fblog.stackademic.com%2Fconda-and-poetry-a-harmonious-fusion-8116895b6380
-)
+[Setup Conda with Poetry](https://freedium.cfd/https://medium.com/m/global-identity-2?redirectUrl=https%3A%2F%2Fblog.stackademic.com%2Fconda-and-poetry-a-harmonious-fusion-8116895b6380)
 
 ```bash
 conda install poetry
@@ -61,4 +70,27 @@ poetry init
 Tạo thư mục dự án mới với poetry
 ```bash
 poetry new test-poetry
+```
+
+
+Thêm package mới vào poetry
+```bash
+# poetry add <package_name>
+poetry add numpy pandas matplotlib
+```
+
+Remove library
+```bash
+# poetry remove <package_name>
+poetry remove pandas
+```
+
+Lock the dependencies to ensure reproducibility:
+```bash
+poetry lock
+```
+
+When need to reinstall
+```bash
+poetry install
 ```
