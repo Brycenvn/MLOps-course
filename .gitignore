@@ -1,2 +1,4 @@
 /mlruns/
 logs.log
+data/
+outputs/
