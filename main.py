@@ -3,7 +3,7 @@ import mlflow
 import argparse
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import SGDClassifier
+from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import roc_auc_score, average_precision_score, accuracy_score, precision_score, recall_score, \
     f1_score
 from sklearn.model_selection import train_test_split
@@ -11,7 +11,7 @@ import joblib
 
 DAGSHUB_REPO_OWNER = "Brycenvn"
 DAGSHUB_REPO = "MLOps-course"
-dagshub.auth.add_app_token('acb8c4a9a8eccb61178bc984b70406c82c592237')
+# dagshub.auth.add_app_token('acb***2237')
 dagshub.init(DAGSHUB_REPO, DAGSHUB_REPO_OWNER, )
 
 # Consts
@@ -49,7 +49,7 @@ def fit_tfidf(train_df, test_df):
 
 
 def fit_model(train_X, train_y, random_state=42):
-    clf_tfidf = SGDClassifier(loss='modified_huber', random_state=random_state)
+    clf_tfidf = AdaBoostClassifier(random_state=random_state)    
     clf_tfidf.fit(train_X, train_y)
     return clf_tfidf
 
@@ -87,7 +87,7 @@ def train():
     train_df = feature_engineering(train_df)
     test_df = feature_engineering(test_df)
 
-    exp_id = get_or_create_experiment_id("tutorial")
+    exp_id = get_or_create_experiment_id("tutorial-adaboost")
 
     with mlflow.start_run(experiment_id=exp_id):
         print('Fitting TFIDF...')
