@@ -1,4 +1,4 @@
 /mlruns/
 logs.log
-data/
-outputs/
+/data
+/outputs

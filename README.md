@@ -12,3 +12,10 @@ MLOps Specialize: Udemy Bootcamp 2022
 ### 3. DagsHub
 - Basic tutorial:
     * Data Explore (EDA), Training&Evaluate prototype model: [1_DAGsHub_Stack_Exchange_Tutorial_EDA.ipynb](DAGsHub/1_DAGsHub_Stack_Exchange_Tutorial_EDA.ipynb)
+
+### 4. DVC - Versioning data and model
+
+```bash
+dvc init
+dvc add data
+```
