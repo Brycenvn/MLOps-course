@@ -8,3 +8,7 @@ MLOps Specialize: Udemy Bootcamp 2022
 
 ### 2. [MLFlow](/MLFlow/) - Tracking experiment, Registry Artifact
 ![mlflow](figs/mlflow.webp)
+
+### 3. DagsHub
+- Basic tutorial:
+    * Data Explore (EDA), Training&Evaluate prototype model: [1_DAGsHub_Stack_Exchange_Tutorial_EDA.ipynb](DAGsHub/1_DAGsHub_Stack_Exchange_Tutorial_EDA.ipynb)
