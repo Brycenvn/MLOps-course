@@ -39,3 +39,12 @@ INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 ```
 > You can open direct http://127.0.0.1:8000 to send request to API or make request via [PostMan](https://www.postman.com/)
 
+4. API specs via Swagger OpenAPI:
+
+Interactive API [exploration](http://localhost:8000/docs) and [documentation](http://localhost:8000/redoc) are automatically generated
+
+5. Try Post METHOD with Pydantic:
+```bash
+(phase3-mlops) python "2. FastAPI_postmethodPydantic.py"
+```
+![response_postmethod](figs/post_pydantic.PNG)
