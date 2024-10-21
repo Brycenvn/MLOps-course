@@ -48,3 +48,26 @@ Interactive API [exploration](http://localhost:8000/docs) and [documentation](ht
 (phase3-mlops) python "2. FastAPI_postmethodPydantic.py"
 ```
 ![response_postmethod](figs/post_pydantic.PNG)
+
+### 2. FastAPI with Scikit-learn model
+Change dir to 3_API_for_Scikit-learn_Model and install required packages:
+```bash
+(phase3-mlops) 
+cd 3_API_for_Scikit-learn_Model
+pip install -r requirements.txt
+```
+Run APIs App:
+```bash
+(phase3-mlops) python app.py
+```
+
+**Pipeline**:
+- Init and Load scikit-learn model via `Model.py`
+- Call loaded IrisModel in `app.py` 
+- Predict new sample with endpoint `/predict`
+
+You can write test script in `test.py` to check inference of your model, Open new terminal and run:
+```bash
+(phase3-mlops) python test.py
+# b'{"prediction":"virginica","probability":0.88}'
+```
