@@ -71,3 +71,35 @@ You can write test script in `test.py` to check inference of your model, Open ne
 (phase3-mlops) python test.py
 # b'{"prediction":"virginica","probability":0.88}'
 ```
+
+### 3. Generate API from Pycaret pipeline 
+Change dir to 4_API_from_Pycaret_pipeline and install required packages:
+```bash
+(phase3-mlops) 
+cd 4_API_from_Pycaret_pipeline
+pip install -r requirements.txt
+```
+
+Run APIs App:
+```bash
+(phase3-mlops) python pycaret_app.py
+
+# Transformation Pipeline and Model Successfully Loaded
+# INFO:     Started server process [14924]  
+# INFO:     Waiting for application startup.
+# INFO:     Application startup complete.   
+# INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+```
+
+
+Pycaret also support generate APIs for skitlearn model:
+```python
+# create API
+create_api(lightgbm, 'my_first_api')
+'''
+This will automate generate APIs:
+- my_first_api.pkl (sklearn model pipeline)
+- my_first_api.py  (FastAPI python script)
+'''
+```
+> See [this notebook](4_API_from_Pycaret_pipeline/API%20with%20Pycaret%20and%20FastAPI.ipynb) for more details
