@@ -1,0 +1,4 @@
+pycaret
+pycaret[models]
+gradio
+pandas
