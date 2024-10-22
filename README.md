@@ -38,3 +38,11 @@ MLOps Specialize: Udemy Bootcamp 2022
 
 **Section 14: MLOps phase 3: Model serving through APIs**
 - [MLOpsPhase3: Serving model APIs with FastAPI](https://github.com/Brycenvn/MLOps-course/tree/MLOpsPhase3-ModelServing)
+
+**Section 15: MLOps Phase 3: Model serving with Web Applications**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-15--MLOps-Phase-3--Model-serving-with-Web-Applications
+
+**Section 16: Flask for application development**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-16--Flask-for-application-development
+
+**Section 17: Docker and containers in Machine Learning**
