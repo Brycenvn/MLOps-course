@@ -58,11 +58,59 @@ app.launch()
 
 3. **Function**: The Python function that processes inputs and generates outputs.
 
+> 📖 [Gradio document](https://www.gradio.app/docs)
 
 
-**Pycaret** support generate Gradio App
+⚙️ **Pycaret** support generate Gradio App
 ```python
 from pycaret.regression import create_model, create_app
 model = create_model('lightgbm')
 create_app(model)
 ```
+
+### 2. Serving model with Streamlit
+
+Install Streamlit package:
+```bash
+cd "2. Streamlit"
+pip install streamlit
+```
+
+Create simple `streamlit` app
+```python
+# quickstart.py
+import streamlit as st 
+# Set the app title 
+st.title('My First Streamlit App') 
+# Create a text input 
+user_input = st.text_input('Enter a Your name:', 'BrycenVN') 
+# Display the customized message 
+st.write('Hello,' + user_input)
+```
+Run the app via Terminal
+
+```bash
+streamlit run quickstart.py
+#   You can now view your Streamlit app in your browser.
+
+#   Local URL: http://localhost:8501
+#   Network URL: http://192.168.10.29:8501
+```
+
+![streamlit](figs/streamlit.PNG)
+
+> 📖 [Streamlit UI galerry](https://docs.streamlit.io/develop/api-references)
+
+
+Run Notebook [Insurance - Model Training Notebook.ipynb](2.%20Streamlit/Insurance%20-%20Model%20Training%20Notebook.ipynb) to get Data and Model
+
+
+Example:
+1. [Development of a web application with Streamlit and Altair](2.%20Streamlit/1_streamlit_altair_app.py)
+    ```bash
+    python 1_streamlit_altair_app.py
+    ```
+2. [Streamlit and Pycaret to develop an ML web service](2.%20Streamlit/2_pycaret_app.py)
+    ```bash
+    python 2_pycaret_app.py
+    ```
