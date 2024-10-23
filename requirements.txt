@@ -1,0 +1,5 @@
+pycaret
+fastapi
+uvicorn
+pydantic<2.0.0. # required for airflow
+
