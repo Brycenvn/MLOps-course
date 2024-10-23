@@ -46,3 +46,8 @@ MLOps Specialize: Udemy Bootcamp 2022
 - https://github.com/Brycenvn/MLOps-course/tree/Section-16--Flask-for-application-development
 
 **Section 17: Docker and containers in Machine Learning**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-17--Docker-and-containers-in-Machine-Learning
+
+**Section 20: Deployment of ML services on Heroku**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-20--Deployment-of-ML-services-on-Heroku
+- Deploy App: https://heroku-deploy-a0f271b49bf0.herokuapp.com/
