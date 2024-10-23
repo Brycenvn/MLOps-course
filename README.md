@@ -31,7 +31,7 @@ docker image build -f "Dockerfile" -t my_image:api_diamond .
 
 ![build](figs/docker_desktop1.PNG)
 
-**2. Build Container from Image:**
+**3. Build Container from Image:**
 
 List all running docker images and create container:
 ```bash
@@ -45,3 +45,23 @@ After successfully building the container
 
 **3. Use API via container:**
 ![build](figs/api_from_container.PNG)
+
+
+
+### Build  Insurance Bill app
+> use same app from [Session 16](https://github.com/Brycenvn/MLOps-course/tree/Section-16--Flask-for-application-development)
+![flow](figs/flow.PNG)
+1. Prepare the environment 
+    ```bash
+    cd insurance_bill
+    ```
+2. Create the `requirementx.txt` and the `Dockerfile`
+3. Build the Docker image with 
+    ```bash
+    docker build -t pycaret.azurecr.io/pycaret-insurance:latest .
+    ```
+4. Test running 
+    ```bash
+    docker run -d -p 5000:5000/tcp pycaret.azurecr.io/pycaret-insurance
+    ```
+![app](figs/docker_app.PNG)
