@@ -48,6 +48,13 @@ MLOps Specialize: Udemy Bootcamp 2022
 **Section 17: Docker and containers in Machine Learning**
 - https://github.com/Brycenvn/MLOps-course/tree/Section-17--Docker-and-containers-in-Machine-Learning
 
+**Section 19: Section 19: Deploy to Azure Cloud with Azure Container and Azure SDKs**
+- https://brycen-pycaret.azurewebsites.net/
+
 **Section 20: Deployment of ML services on Heroku**
 - https://github.com/Brycenvn/MLOps-course/tree/Section-20--Deployment-of-ML-services-on-Heroku
 - Deploy App: https://heroku-deploy-a0f271b49bf0.herokuapp.com/
+
+
+**Section 21: Continuous integration and delivery (CI/CD) with GitHub Actions and CML**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-21--Continuous-integration-and-delivery-(CI/CD)-with-GitHub-Actions-and-CML
