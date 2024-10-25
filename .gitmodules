@@ -1,0 +1,3 @@
+[submodule "e2eMLOps"]
+	path = e2eMLOps
+	url = https://github.com/Brycenvn/e2eMLOps.git
