@@ -58,3 +58,8 @@ MLOps Specialize: Udemy Bootcamp 2022
 
 **Section 21: Continuous integration and delivery (CI/CD) with GitHub Actions and CML**
 - https://github.com/Brycenvn/MLOps-course/tree/Section-21--Continuous-integration-and-delivery-(CI/CD)-with-GitHub-Actions-and-CML
+
+**Section 22: Model and service monitoring with Evidently AI**
+- https://github.com/Brycenvn/MLOps-course/tree/Section-22--Model-and-service-monitoring-with-Evidently-AI
+
+**Section 23: End-to-end MLOps Project**
